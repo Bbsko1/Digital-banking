@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    min-height: 120px;
+    background-image: linear-gradient(to top, rgb(7, 29, 104), rgb(11, 75, 236));
+    /* opacity: 0.1; */
+
+    &__container {
+        display: flex;
+    }
+
+    &__navigation {
+        margin-left: auto;
+    }
+}
