@@ -1,0 +1,57 @@
+.achievements {
+    position: relative;
+    height: 1px;
+    min-height: 550px;
+    background-image: url("../../img/img/achievements@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+        background: linear-gradient(342deg, rgba(7, 29, 104, 0.9) 0%, rgba(11, 75, 236, 0.9) 100%);
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__picture {
+        width: 55px;
+    }
+
+    &__title {
+        @include text-semiBold;
+
+        margin: 24px 0 0;
+        font-size: 52px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 24px;
+    }
+}
