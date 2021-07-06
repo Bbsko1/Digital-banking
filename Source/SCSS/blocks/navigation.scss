@@ -1,4 +1,6 @@
 .navigation {
+    @include text-semiBold;
+
     display: flex;
     font-size: 14px;
     line-height: 1.5;
