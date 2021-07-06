@@ -2,10 +2,14 @@
     position: relative;
     height: 1px;
     min-height: 550px;
-    background-image: url("../../img/img/achievements@1x.png");
+    background-image: url("../img/img/achievements@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/img/achievements@2x.png");
+    }
 
     &::after {
         position: absolute;
