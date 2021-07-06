@@ -1,0 +1,73 @@
+.message {
+    height: 1px;
+    min-height: 580px;
+    color: #000;
+    background-color: #fff;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__title {
+        @include text-semiBold;
+
+        margin: 0 0 50px;
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    &__form {
+        @include text-regular-second;
+
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 70px;
+        font-size: 14px;
+        line-height: 1.5;
+        grid-template-areas:
+            "name message"
+            "email message"
+            "subject button";
+    }
+
+    &__input {
+        padding: 16px 20px;
+        border: 1px solid rgba($color: #000, $alpha: 0.2);
+
+        &--name {
+            grid-area: name;
+        }
+
+        &--email {
+            grid-area: email;
+        }
+
+        &--subject {
+            grid-area: subject;
+        }
+    }
+
+    &__textarea {
+        grid-area: message;
+        padding: 20px;
+        resize: none;
+        border: 1px solid rgba($color: #000, $alpha: 0.2);
+    }
+
+    &__button {
+        @include text-regular-second;
+
+        grid-area: button;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #fff;
+        cursor: pointer;
+        background-color: $main-color;
+        border: none;
+    }
+}
