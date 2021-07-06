@@ -69,7 +69,6 @@ exports.server = server;
 
 const scripts = () => {
   return gulp.src([
-      './node_modules/jquery/dist/jquery.js',
       './Source/JS/libs/*.js',
       './Source/JS/blocks/*.js'
     ])

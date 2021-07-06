@@ -1,5 +1,28 @@
 .main-section {
+    position: relative;
     min-height: calc(100vh - 120px);
+    overflow: hidden;
+    background-image: url("../img/img/Shape@1x.png");
+    background-repeat: no-repeat;
+    background-position: 14%, 50%;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 35%;
+        right: -18%;
+        width: 630px;
+        height: 350px;
+        content: "";
+        background-image: linear-gradient(342deg, rgba(7, 29, 104, 0.6) 0%, rgba(11, 75, 236, 0.6) 100%);
+        border-radius: 65px;
+        transform: rotate(35deg);
+    }
+
+    &::before {
+        top: 18%;
+        right: -16%;
+    }
 
     &__container {
         display: flex;
@@ -37,21 +60,34 @@
         border-radius: 22px;
     }
 
+    &__wrapper {
+        display: flex;
+    }
+
     &__picture {
         position: relative;
-        max-width: 570px;
+        max-width: 410px;
+        opacity: 0.4;
 
         &::after {
             position: absolute;
-            bottom: -145px;
+            bottom: -108px;
             left: 0;
             width: 100%;
-            height: 145px;
+            height: 108px;
             content: "";
             background-image: url('../img/img/card@1x.png');
+            background-repeat: no-repeat;
             background-position: bottom;
+            background-size: cover;
             opacity: 0.2;
             transform: scale(1, -1);
+        }
+
+        &--main {
+            z-index: 2;
+            opacity: 1;
+            transform: scale(1.45);
         }
     }
 }
