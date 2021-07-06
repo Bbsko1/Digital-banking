@@ -1,0 +1,12 @@
+.user-list {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        padding: 10px 15px;
+        color: #0b4bec;
+        text-transform: capitalize;
+        background-color: #fff;
+        border-radius: 12px;
+    }
+}

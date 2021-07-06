@@ -1,33 +1,28 @@
 // fonts
 
 @mixin text-light {
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
 @mixin text-regular {
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
-@mixin text-semiBold {
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    font-weight: 500;
+@mixin text-title {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 @mixin subtitle {
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    font-weight: 700;
-}
-
-@mixin title {
-    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
-@mixin main-title {
-    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif;
-    font-weight: 700;
+@mixin text-regular-second {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 // Display-width
