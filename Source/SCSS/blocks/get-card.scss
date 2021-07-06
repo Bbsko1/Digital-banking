@@ -62,6 +62,7 @@
     &__text {
         @include text-regular-second;
 
+        max-width: 298px;
         font-size: 14px;
         line-height: 2;
         text-align: center;
