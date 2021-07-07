@@ -11,6 +11,11 @@
         background-image: url("../img/img/achievements@2x.png");
     }
 
+    @media (max-width: $display-sm-max) {
+        height: auto;
+        min-height: auto;
+    }
+
     &::after {
         position: absolute;
         top: 0;
@@ -28,22 +33,46 @@
         display: flex;
         align-items: center;
         height: 100%;
+
+        @media (max-width: $display-sm-max) {
+            padding: 30px 15px;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @media (max-width: $display-lg-max) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: $display-lg-max) {
+            width: 205px;
+            margin: 15px;
+        }
+
+        @media (max-width: $display-sm-max) {
+            width: 135px;
+        }
     }
 
     &__picture {
         width: 55px;
+        height: 55px;
+
+        @media (max-width: $display-sm-max) {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     &__title {
@@ -53,9 +82,17 @@
         font-size: 52px;
         line-height: 1.5;
         text-transform: uppercase;
+
+        @media (max-width: $display-sm-max) {
+            font-size: 32px;
+        }
     }
 
     &__text {
         font-size: 24px;
+
+        @media (max-width: $display-sm-max) {
+            font-size: 16px;
+        }
     }
 }
