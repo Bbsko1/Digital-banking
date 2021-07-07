@@ -24,6 +24,10 @@
         background-image: linear-gradient(342deg, rgba(7, 29, 104, 0.6) 0%, rgba(11, 75, 236, 0.6) 100%);
         border-radius: 65px;
         transform: rotate(35deg);
+
+        @media (max-width: $display-lg-max) {
+            display: none;
+        }
     }
 
     &::before {
@@ -47,6 +51,7 @@
         margin-top: 0;
         font-size: 40px;
         line-height: 1.5;
+        text-align: center;
 
         @media (max-width: $display-xxl-max) {
             font-size: 26px;
@@ -101,10 +106,10 @@
 
         &::after {
             position: absolute;
-            bottom: -108px;
+            bottom: -40%;
             left: 0;
             width: 100%;
-            height: 108px;
+            height: 40%;
             content: "";
             background-image: url('../img/img/card@1x.png');
             background-repeat: no-repeat;
