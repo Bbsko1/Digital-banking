@@ -60,6 +60,7 @@
         text-align: center;
 
         @media (max-width: $display-xxl-max) {
+            margin-top: 20px;
             font-size: 26px;
         }
     }
