@@ -5,7 +5,7 @@ const menuLinks = document.querySelectorAll('.navigation__link');
 navBtn.addEventListener("click", function (evt) {
     evt.preventDefault()
     navBtn.classList.toggle("navigation__button--closed");
-    navList.classList.toggle("navigation__wrapper--active")
+    navList.classList.toggle("navigation__wrapper--active");
 })
 
 menuLinks.forEach(function (link) {
