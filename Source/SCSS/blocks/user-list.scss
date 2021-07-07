@@ -2,11 +2,24 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: $display-lg-max) {
+        display: none;
+    }
+
     &__link {
-        padding: 10px 15px;
-        color: #0b4bec;
+        padding: 9px 14px;
+        color: $main-color;
         text-transform: capitalize;
         background-color: #fff;
+        border: 2px solid transparent;
         border-radius: 12px;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #fff;
+        }
     }
 }

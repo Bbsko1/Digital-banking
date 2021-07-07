@@ -1,18 +1,25 @@
 .main-section {
     position: relative;
+    height: 1px;
     min-height: calc(100vh - 120px);
     overflow: hidden;
     background-image: url("../img/img/Shape@1x.png");
     background-repeat: no-repeat;
-    background-position: 14%, 50%;
+    background-position: 14% 20%;
+
+    @media (max-width: $display-xxl-max) {
+        min-height: calc(100vh - 60px);
+        background-image: url("../img/img/Shape-min.png");
+    }
 
     &::before,
     &::after {
         position: absolute;
         top: 35%;
-        right: -18%;
-        width: 630px;
-        height: 350px;
+        right: -20%;
+        z-index: 1;
+        width: 33vw;
+        height: 18vw;
         content: "";
         background-image: linear-gradient(342deg, rgba(7, 29, 104, 0.6) 0%, rgba(11, 75, 236, 0.6) 100%);
         border-radius: 65px;
@@ -21,21 +28,29 @@
 
     &::before {
         top: 18%;
-        right: -16%;
+        right: -18%;
     }
 
     &__container {
+        position: relative;
+        z-index: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
 
     &__title {
         @include text-semiBold;
 
+        margin-top: 0;
         font-size: 40px;
         line-height: 1.5;
+
+        @media (max-width: $display-xxl-max) {
+            font-size: 26px;
+        }
     }
 
     &__text {
@@ -51,23 +66,38 @@
         @include text-semiBold;
 
         padding: 15px 45px;
-        margin: 56px 0 90px;
+        margin: 4vh 0 10vh;
         color: $main-color;
         text-transform: uppercase;
         cursor: pointer;
         background-color: #fff;
         border: none;
         border-radius: 22px;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
     }
 
     &__wrapper {
         display: flex;
+        margin-bottom: 140px;
+
+        @media (max-width: $display-xxl-max) {
+            margin-bottom: 70px;
+        }
     }
 
     &__picture {
         position: relative;
         max-width: 410px;
         opacity: 0.4;
+
+        @media (max-width: $display-xxl-max) {
+            max-width: 290px;
+        }
 
         &::after {
             position: absolute;
