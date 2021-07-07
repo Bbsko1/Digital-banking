@@ -162,7 +162,7 @@ const doneServer = (done) => {
     notify: false,
     cors: true,
     ui: false,
-    tunnel: 'mavicbbsko',
+    tunnel: 'bankingbbsko',
     open: false,
     host: devip()
   });
