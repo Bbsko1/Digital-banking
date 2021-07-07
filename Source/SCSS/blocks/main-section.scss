@@ -12,6 +12,12 @@
         background-image: url("../img/img/Shape-min.png");
     }
 
+    @media (max-width: $display-lg-max) {
+        height: auto;
+        min-height: auto;
+        background-image: url("../img/img/Shape-min.png");
+    }
+
     &::before,
     &::after {
         position: absolute;
