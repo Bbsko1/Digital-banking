@@ -33,6 +33,22 @@
             "name message"
             "email message"
             "subject button";
+
+        @media (max-width: $display-md-max) {
+            column-gap: 30px;
+        }
+
+        @media (max-width: $display-sm-max) {
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "name"
+            "email"
+            "subject"
+            "message"
+            "message"
+            "button";
+        }
     }
 
     &__input {
