@@ -8,7 +8,6 @@
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
-    "dev-ip": "^1.0.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",

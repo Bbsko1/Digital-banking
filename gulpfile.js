@@ -10,7 +10,6 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify-es').default;
 const concat = require('gulp-concat');
 const webp = require('gulp-webp');
-const devip = require('dev-ip');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const gulpStylelint = require('gulp-stylelint');
@@ -57,7 +56,6 @@ const server = (done) => {
     cors: true,
     ui: false,
     open: false,
-    host: devip(["192.168.1.76", "192.168.1.80"])
   });
   done();
 }
@@ -164,7 +162,6 @@ const doneServer = (done) => {
     ui: false,
     tunnel: 'bankingbbsko',
     open: false,
-    host: devip()
   });
   done();
 }
